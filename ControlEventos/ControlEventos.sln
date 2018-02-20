@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlEventos", "ControlEventos\ControlEventos.csproj", "{4B2A8923-6B70-4B01-82DA-32C3F349D15E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escritura", "Escritura\Escritura.csproj", "{93238914-E2DF-4D91-B684-D0589289ED1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidad", "Entidad\Entidad.csproj", "{10398755-5909-4A0E-85BE-98D3109C44A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4B2A8923-6B70-4B01-82DA-32C3F349D15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B2A8923-6B70-4B01-82DA-32C3F349D15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B2A8923-6B70-4B01-82DA-32C3F349D15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93238914-E2DF-4D91-B684-D0589289ED1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93238914-E2DF-4D91-B684-D0589289ED1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93238914-E2DF-4D91-B684-D0589289ED1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93238914-E2DF-4D91-B684-D0589289ED1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10398755-5909-4A0E-85BE-98D3109C44A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10398755-5909-4A0E-85BE-98D3109C44A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10398755-5909-4A0E-85BE-98D3109C44A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10398755-5909-4A0E-85BE-98D3109C44A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
