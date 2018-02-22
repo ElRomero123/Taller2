@@ -30,7 +30,7 @@
         {
             this.BotonBuscar = new System.Windows.Forms.Button();
             this.BotonNuevo = new System.Windows.Forms.Button();
-            this.BotonEliminar = new System.Windows.Forms.Button();
+            this.BotonOK = new System.Windows.Forms.Button();
             this.CampoCC = new System.Windows.Forms.TextBox();
             this.CampoNombre = new System.Windows.Forms.TextBox();
             this.CampoApellido = new System.Windows.Forms.TextBox();
@@ -42,13 +42,16 @@
             this.Etiqueta5 = new System.Windows.Forms.Label();
             this.CampoEmail = new System.Windows.Forms.TextBox();
             this.EtiquetaEstado = new System.Windows.Forms.Label();
+            this.EtiquetaAsistencia = new System.Windows.Forms.Label();
+            this.BotonImportar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BotonBuscar
             // 
-            this.BotonBuscar.Location = new System.Drawing.Point(36, 225);
+            this.BotonBuscar.Location = new System.Drawing.Point(12, 225);
             this.BotonBuscar.Name = "BotonBuscar";
-            this.BotonBuscar.Size = new System.Drawing.Size(75, 36);
+            this.BotonBuscar.Size = new System.Drawing.Size(102, 65);
             this.BotonBuscar.TabIndex = 0;
             this.BotonBuscar.Text = "Buscar";
             this.BotonBuscar.UseVisualStyleBackColor = true;
@@ -56,23 +59,23 @@
             // 
             // BotonNuevo
             // 
-            this.BotonNuevo.Location = new System.Drawing.Point(117, 225);
+            this.BotonNuevo.Location = new System.Drawing.Point(120, 225);
             this.BotonNuevo.Name = "BotonNuevo";
-            this.BotonNuevo.Size = new System.Drawing.Size(75, 36);
+            this.BotonNuevo.Size = new System.Drawing.Size(102, 65);
             this.BotonNuevo.TabIndex = 1;
             this.BotonNuevo.Text = "Nuevo";
             this.BotonNuevo.UseVisualStyleBackColor = true;
             this.BotonNuevo.Click += new System.EventHandler(this.BotonNuevo_Click);
             // 
-            // BotonEliminar
+            // BotonOK
             // 
-            this.BotonEliminar.Location = new System.Drawing.Point(198, 225);
-            this.BotonEliminar.Name = "BotonEliminar";
-            this.BotonEliminar.Size = new System.Drawing.Size(75, 36);
-            this.BotonEliminar.TabIndex = 2;
-            this.BotonEliminar.Text = "Eliminar";
-            this.BotonEliminar.UseVisualStyleBackColor = true;
-            this.BotonEliminar.Click += new System.EventHandler(this.BotonEliminar_Click);
+            this.BotonOK.Location = new System.Drawing.Point(228, 225);
+            this.BotonOK.Name = "BotonOK";
+            this.BotonOK.Size = new System.Drawing.Size(102, 65);
+            this.BotonOK.TabIndex = 2;
+            this.BotonOK.Text = "Poner como asistente";
+            this.BotonOK.UseVisualStyleBackColor = true;
+            this.BotonOK.Click += new System.EventHandler(this.BotonOK_Click);
             // 
             // CampoCC
             // 
@@ -157,17 +160,47 @@
             // EtiquetaEstado
             // 
             this.EtiquetaEstado.AutoSize = true;
-            this.EtiquetaEstado.Location = new System.Drawing.Point(33, 284);
+            this.EtiquetaEstado.Location = new System.Drawing.Point(12, 308);
             this.EtiquetaEstado.Name = "EtiquetaEstado";
             this.EtiquetaEstado.Size = new System.Drawing.Size(20, 17);
             this.EtiquetaEstado.TabIndex = 13;
             this.EtiquetaEstado.Text = "...";
             // 
+            // EtiquetaAsistencia
+            // 
+            this.EtiquetaAsistencia.AutoSize = true;
+            this.EtiquetaAsistencia.Location = new System.Drawing.Point(53, 9);
+            this.EtiquetaAsistencia.Name = "EtiquetaAsistencia";
+            this.EtiquetaAsistencia.Size = new System.Drawing.Size(72, 17);
+            this.EtiquetaAsistencia.TabIndex = 14;
+            this.EtiquetaAsistencia.Text = "Asistencia";
+            // 
+            // BotonImportar
+            // 
+            this.BotonImportar.Location = new System.Drawing.Point(120, 296);
+            this.BotonImportar.Name = "BotonImportar";
+            this.BotonImportar.Size = new System.Drawing.Size(102, 65);
+            this.BotonImportar.TabIndex = 15;
+            this.BotonImportar.Text = "Importar";
+            this.BotonImportar.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(230, 296);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(102, 65);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Exportar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // FormularioRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(367, 325);
+            this.ClientSize = new System.Drawing.Size(344, 405);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BotonImportar);
+            this.Controls.Add(this.EtiquetaAsistencia);
             this.Controls.Add(this.EtiquetaEstado);
             this.Controls.Add(this.Etiqueta5);
             this.Controls.Add(this.CampoEmail);
@@ -179,7 +212,7 @@
             this.Controls.Add(this.CampoApellido);
             this.Controls.Add(this.CampoNombre);
             this.Controls.Add(this.CampoCC);
-            this.Controls.Add(this.BotonEliminar);
+            this.Controls.Add(this.BotonOK);
             this.Controls.Add(this.BotonNuevo);
             this.Controls.Add(this.BotonBuscar);
             this.Name = "FormularioRegistro";
@@ -193,7 +226,7 @@
 
         private System.Windows.Forms.Button BotonBuscar;
         private System.Windows.Forms.Button BotonNuevo;
-        private System.Windows.Forms.Button BotonEliminar;
+        private System.Windows.Forms.Button BotonOK;
         private System.Windows.Forms.TextBox CampoCC;
         private System.Windows.Forms.TextBox CampoNombre;
         private System.Windows.Forms.TextBox CampoApellido;
@@ -205,6 +238,9 @@
         private System.Windows.Forms.Label Etiqueta5;
         private System.Windows.Forms.TextBox CampoEmail;
         private System.Windows.Forms.Label EtiquetaEstado;
+        private System.Windows.Forms.Label EtiquetaAsistencia;
+        private System.Windows.Forms.Button BotonImportar;
+        private System.Windows.Forms.Button button2;
     }
 }
 
