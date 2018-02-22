@@ -65,5 +65,12 @@ namespace ControlEventos
                 EtiquetaAsistencia.Text = "NO Asistió";
             }
         }
+
+        private void BotonImportar_Click(object sender, EventArgs e)
+        {
+            FormularioImportar Importar = new FormularioImportar();
+            Importar.Show();
+            SetVisibleCore(true);
+        }
     }
 }

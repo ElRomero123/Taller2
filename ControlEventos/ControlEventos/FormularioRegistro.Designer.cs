@@ -183,6 +183,7 @@
             this.BotonImportar.TabIndex = 15;
             this.BotonImportar.Text = "Importar";
             this.BotonImportar.UseVisualStyleBackColor = true;
+            this.BotonImportar.Click += new System.EventHandler(this.BotonImportar_Click);
             // 
             // button2
             // 
@@ -197,7 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 405);
+            this.ClientSize = new System.Drawing.Size(344, 379);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.BotonImportar);
             this.Controls.Add(this.EtiquetaAsistencia);

@@ -68,6 +68,40 @@ namespace Escritura
             return Asistente;
         }
 
+        public static bool Importar(string rutaActual, string rutaOrigen)
+        {
+            bool result;
+            string line;
+
+            try
+            {
+                StreamWriter sw = new StreamWriter(rutaActual, true);
+                StreamReader sr = new StreamReader(rutaOrigen);
+
+                do
+                {
+                    line = sr.ReadLine();
+                    sw.WriteLine(line);
+
+                }
+                while (line != null);
+
+                line = sr.ReadLine();
+                
+                sw.Close();
+                sr.Close();
+
+                result = true;
+            }
+
+            catch
+            {
+                result = false;
+            }
+
+            return result;
+        }
+
         public static bool Verificar(string line, long CC)
         {
             bool result = false;
