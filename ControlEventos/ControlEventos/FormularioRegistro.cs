@@ -14,14 +14,14 @@ namespace ControlEventos
 
         private void BotonBuscar_Click(object sender, EventArgs e)
         {
-            EscribirAsistente( E.Escritura.BuscarAsistente( long.Parse(CampoCC.Text), @"C:\Users\Juan Pablo\Desktop\CSVDatos.csv") );
+            EscribirAsistente( E.Escritura.BuscarAsistente( long.Parse(CampoCC.Text), @"E:\Universidad20181\Plataformas\BDTaller2.csv") );
         }
 
         private void BotonNuevo_Click(object sender, EventArgs e)
         {
             EN.Asistente Asistente = CrearAsistente();
 
-            if (E.Escritura.EscribirAsistente(Asistente, @"C:\Users\Juan Pablo\Desktop\CSVDatos.csv") )
+            if (E.Escritura.EscribirAsistente(Asistente, @"E:\Universidad20181\Plataformas\BDTaller2.csv") )
             {
                 EtiquetaEstado.Text = "Asistente ingresado correctamente!";
             }
@@ -49,27 +49,37 @@ namespace ControlEventos
 
         private void EscribirAsistente(EN.Asistente Asistente)
         {
-            CampoCC.Text = Asistente.CC.ToString();
-            CampoNombre.Text = Asistente.Nombre;
-            CampoApellido.Text = Asistente.Apellido;
-            CampoTelefono.Text = Asistente.Telefono;
-            CampoEmail.Text = Asistente.Email;
-            
-            if(Asistente.Asistencia == 1)
+            if (Asistente != null)
             {
-                EtiquetaAsistencia.Text = "Asistió";
-            }
+                CampoCC.Text = Asistente.CC.ToString();
+                CampoNombre.Text = Asistente.Nombre;
+                CampoApellido.Text = Asistente.Apellido;
+                CampoTelefono.Text = Asistente.Telefono;
+                CampoEmail.Text = Asistente.Email;
 
-            else
-            {
-                EtiquetaAsistencia.Text = "NO Asistió";
-            }
+                if (Asistente.Asistencia == 1)
+                {
+                    EtiquetaAsistencia.Text = "Asistió";
+                }
+
+                else
+                {
+                    EtiquetaAsistencia.Text = "NO Asistió";
+                }
+            } 
         }
 
         private void BotonImportar_Click(object sender, EventArgs e)
         {
             FormularioImportar Importar = new FormularioImportar();
             Importar.Show();
+            SetVisibleCore(true);
+        }
+
+        private void BotonExportar_Click(object sender, EventArgs e)
+        {
+            FormularioExportar Exportar = new FormularioExportar();
+            Exportar.Show();
             SetVisibleCore(true);
         }
     }

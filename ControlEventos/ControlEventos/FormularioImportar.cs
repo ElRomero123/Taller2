@@ -10,7 +10,20 @@ namespace ControlEventos
         {
             InitializeComponent();
         }
+        private void BotonExplorar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Explorador = new OpenFileDialog
+            {
+                Multiselect = true,
+                Filter = "Documentos (CSV, TXT)|*.csv;*.txt"
+            };
 
+
+            if (Explorador.ShowDialog() == DialogResult.OK)
+            {
+                CampoRuta.Text = Explorador.FileName.ToString();
+            }
+        }
         private void BotonImportar_Click(object sender, EventArgs e)
         {
             if(E.Escritura.Importar(@"C:\Users\Juan Pablo\Desktop\CSVDatos.csv", CampoRuta.Text))
@@ -19,7 +32,7 @@ namespace ControlEventos
             }
             else
             {
-
+                
             }
         }
     }

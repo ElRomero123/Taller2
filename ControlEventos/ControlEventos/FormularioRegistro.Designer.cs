@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioRegistro));
             this.BotonBuscar = new System.Windows.Forms.Button();
             this.BotonNuevo = new System.Windows.Forms.Button();
             this.BotonOK = new System.Windows.Forms.Button();
@@ -44,12 +45,16 @@
             this.EtiquetaEstado = new System.Windows.Forms.Label();
             this.EtiquetaAsistencia = new System.Windows.Forms.Label();
             this.BotonImportar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BotonExportar = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // BotonBuscar
             // 
-            this.BotonBuscar.Location = new System.Drawing.Point(12, 225);
+            this.BotonBuscar.Location = new System.Drawing.Point(16, 27);
             this.BotonBuscar.Name = "BotonBuscar";
             this.BotonBuscar.Size = new System.Drawing.Size(102, 65);
             this.BotonBuscar.TabIndex = 0;
@@ -59,7 +64,7 @@
             // 
             // BotonNuevo
             // 
-            this.BotonNuevo.Location = new System.Drawing.Point(120, 225);
+            this.BotonNuevo.Location = new System.Drawing.Point(124, 27);
             this.BotonNuevo.Name = "BotonNuevo";
             this.BotonNuevo.Size = new System.Drawing.Size(102, 65);
             this.BotonNuevo.TabIndex = 1;
@@ -69,7 +74,7 @@
             // 
             // BotonOK
             // 
-            this.BotonOK.Location = new System.Drawing.Point(228, 225);
+            this.BotonOK.Location = new System.Drawing.Point(232, 27);
             this.BotonOK.Name = "BotonOK";
             this.BotonOK.Size = new System.Drawing.Size(102, 65);
             this.BotonOK.TabIndex = 2;
@@ -79,29 +84,29 @@
             // 
             // CampoCC
             // 
-            this.CampoCC.Location = new System.Drawing.Point(142, 52);
+            this.CampoCC.Location = new System.Drawing.Point(106, 56);
             this.CampoCC.Name = "CampoCC";
-            this.CampoCC.Size = new System.Drawing.Size(100, 22);
+            this.CampoCC.Size = new System.Drawing.Size(264, 22);
             this.CampoCC.TabIndex = 3;
             // 
             // CampoNombre
             // 
-            this.CampoNombre.Location = new System.Drawing.Point(142, 80);
+            this.CampoNombre.Location = new System.Drawing.Point(106, 84);
             this.CampoNombre.Name = "CampoNombre";
-            this.CampoNombre.Size = new System.Drawing.Size(100, 22);
+            this.CampoNombre.Size = new System.Drawing.Size(264, 22);
             this.CampoNombre.TabIndex = 4;
             // 
             // CampoApellido
             // 
-            this.CampoApellido.Location = new System.Drawing.Point(142, 108);
+            this.CampoApellido.Location = new System.Drawing.Point(106, 112);
             this.CampoApellido.Name = "CampoApellido";
-            this.CampoApellido.Size = new System.Drawing.Size(100, 22);
+            this.CampoApellido.Size = new System.Drawing.Size(264, 22);
             this.CampoApellido.TabIndex = 5;
             // 
             // Etiqueta1
             // 
             this.Etiqueta1.AutoSize = true;
-            this.Etiqueta1.Location = new System.Drawing.Point(53, 55);
+            this.Etiqueta1.Location = new System.Drawing.Point(17, 59);
             this.Etiqueta1.Name = "Etiqueta1";
             this.Etiqueta1.Size = new System.Drawing.Size(52, 17);
             this.Etiqueta1.TabIndex = 6;
@@ -110,7 +115,7 @@
             // Etiqueta2
             // 
             this.Etiqueta2.AutoSize = true;
-            this.Etiqueta2.Location = new System.Drawing.Point(53, 83);
+            this.Etiqueta2.Location = new System.Drawing.Point(17, 87);
             this.Etiqueta2.Name = "Etiqueta2";
             this.Etiqueta2.Size = new System.Drawing.Size(58, 17);
             this.Etiqueta2.TabIndex = 7;
@@ -119,7 +124,7 @@
             // Etiqueta3
             // 
             this.Etiqueta3.AutoSize = true;
-            this.Etiqueta3.Location = new System.Drawing.Point(53, 111);
+            this.Etiqueta3.Location = new System.Drawing.Point(17, 115);
             this.Etiqueta3.Name = "Etiqueta3";
             this.Etiqueta3.Size = new System.Drawing.Size(58, 17);
             this.Etiqueta3.TabIndex = 8;
@@ -127,15 +132,15 @@
             // 
             // CampoTelefono
             // 
-            this.CampoTelefono.Location = new System.Drawing.Point(142, 136);
+            this.CampoTelefono.Location = new System.Drawing.Point(106, 140);
             this.CampoTelefono.Name = "CampoTelefono";
-            this.CampoTelefono.Size = new System.Drawing.Size(100, 22);
+            this.CampoTelefono.Size = new System.Drawing.Size(264, 22);
             this.CampoTelefono.TabIndex = 9;
             // 
             // Etiqueta4
             // 
             this.Etiqueta4.AutoSize = true;
-            this.Etiqueta4.Location = new System.Drawing.Point(53, 139);
+            this.Etiqueta4.Location = new System.Drawing.Point(17, 143);
             this.Etiqueta4.Name = "Etiqueta4";
             this.Etiqueta4.Size = new System.Drawing.Size(64, 17);
             this.Etiqueta4.TabIndex = 10;
@@ -144,7 +149,7 @@
             // Etiqueta5
             // 
             this.Etiqueta5.AutoSize = true;
-            this.Etiqueta5.Location = new System.Drawing.Point(53, 167);
+            this.Etiqueta5.Location = new System.Drawing.Point(17, 171);
             this.Etiqueta5.Name = "Etiqueta5";
             this.Etiqueta5.Size = new System.Drawing.Size(42, 17);
             this.Etiqueta5.TabIndex = 12;
@@ -152,15 +157,15 @@
             // 
             // CampoEmail
             // 
-            this.CampoEmail.Location = new System.Drawing.Point(142, 164);
+            this.CampoEmail.Location = new System.Drawing.Point(106, 168);
             this.CampoEmail.Name = "CampoEmail";
-            this.CampoEmail.Size = new System.Drawing.Size(100, 22);
+            this.CampoEmail.Size = new System.Drawing.Size(264, 22);
             this.CampoEmail.TabIndex = 11;
             // 
             // EtiquetaEstado
             // 
             this.EtiquetaEstado.AutoSize = true;
-            this.EtiquetaEstado.Location = new System.Drawing.Point(12, 308);
+            this.EtiquetaEstado.Location = new System.Drawing.Point(15, 37);
             this.EtiquetaEstado.Name = "EtiquetaEstado";
             this.EtiquetaEstado.Size = new System.Drawing.Size(20, 17);
             this.EtiquetaEstado.TabIndex = 13;
@@ -169,7 +174,7 @@
             // EtiquetaAsistencia
             // 
             this.EtiquetaAsistencia.AutoSize = true;
-            this.EtiquetaAsistencia.Location = new System.Drawing.Point(53, 9);
+            this.EtiquetaAsistencia.Location = new System.Drawing.Point(12, 9);
             this.EtiquetaAsistencia.Name = "EtiquetaAsistencia";
             this.EtiquetaAsistencia.Size = new System.Drawing.Size(72, 17);
             this.EtiquetaAsistencia.TabIndex = 14;
@@ -177,7 +182,7 @@
             // 
             // BotonImportar
             // 
-            this.BotonImportar.Location = new System.Drawing.Point(120, 296);
+            this.BotonImportar.Location = new System.Drawing.Point(124, 98);
             this.BotonImportar.Name = "BotonImportar";
             this.BotonImportar.Size = new System.Drawing.Size(102, 65);
             this.BotonImportar.TabIndex = 15;
@@ -185,24 +190,48 @@
             this.BotonImportar.UseVisualStyleBackColor = true;
             this.BotonImportar.Click += new System.EventHandler(this.BotonImportar_Click);
             // 
-            // button2
+            // BotonExportar
             // 
-            this.button2.Location = new System.Drawing.Point(230, 296);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 65);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Exportar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BotonExportar.Location = new System.Drawing.Point(232, 98);
+            this.BotonExportar.Name = "BotonExportar";
+            this.BotonExportar.Size = new System.Drawing.Size(102, 65);
+            this.BotonExportar.TabIndex = 16;
+            this.BotonExportar.Text = "Exportar";
+            this.BotonExportar.UseVisualStyleBackColor = true;
+            this.BotonExportar.Click += new System.EventHandler(this.BotonExportar_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.BotonBuscar);
+            this.groupBox1.Controls.Add(this.BotonExportar);
+            this.groupBox1.Controls.Add(this.BotonNuevo);
+            this.groupBox1.Controls.Add(this.BotonImportar);
+            this.groupBox1.Controls.Add(this.BotonOK);
+            this.groupBox1.Location = new System.Drawing.Point(20, 209);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(350, 176);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Opciones";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.EtiquetaEstado);
+            this.groupBox2.Location = new System.Drawing.Point(20, 400);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(350, 80);
+            this.groupBox2.TabIndex = 18;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Opciones";
             // 
             // FormularioRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 379);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.BotonImportar);
+            this.ClientSize = new System.Drawing.Size(394, 492);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.EtiquetaAsistencia);
-            this.Controls.Add(this.EtiquetaEstado);
             this.Controls.Add(this.Etiqueta5);
             this.Controls.Add(this.CampoEmail);
             this.Controls.Add(this.Etiqueta4);
@@ -213,11 +242,12 @@
             this.Controls.Add(this.CampoApellido);
             this.Controls.Add(this.CampoNombre);
             this.Controls.Add(this.CampoCC);
-            this.Controls.Add(this.BotonOK);
-            this.Controls.Add(this.BotonNuevo);
-            this.Controls.Add(this.BotonBuscar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormularioRegistro";
             this.Text = "Control de ingreso";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,7 +271,9 @@
         private System.Windows.Forms.Label EtiquetaEstado;
         private System.Windows.Forms.Label EtiquetaAsistencia;
         private System.Windows.Forms.Button BotonImportar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BotonExportar;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

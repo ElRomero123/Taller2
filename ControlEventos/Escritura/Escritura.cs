@@ -82,12 +82,9 @@ namespace Escritura
                 {
                     line = sr.ReadLine();
                     sw.WriteLine(line);
-
                 }
                 while (line != null);
 
-                line = sr.ReadLine();
-                
                 sw.Close();
                 sr.Close();
 
@@ -102,10 +99,60 @@ namespace Escritura
             return result;
         }
 
-        public static bool Verificar(string line, long CC)
+        public static bool Exportar(string rutaDefault, string rutaDestino)
+        {
+            bool result = false;
+            string completeRoute = rutaDestino + @"\export.csv";
+
+
+            try
+            {
+                StreamWriter sw = File.CreateText(completeRoute);
+                StreamReader sr = new StreamReader(rutaDefault);
+
+                string line;
+
+                while (true)
+                {
+                    line = sr.ReadLine();
+                    if (line != null && VerificarAsistencia(line))
+                    {
+                        string[] atributos = line.Split(';');
+                        sw.WriteLine("{0};{1};{2};{3};{4}", atributos[0], atributos[1], atributos[2], atributos[3], atributos[4]);
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+                sw.Close();
+                sr.Close();
+
+                result = true;
+            }
+
+            catch
+            {
+
+            }
+            return result;
+        }
+
+        private static bool Verificar(string line, long CC)
         {
             bool result = false;
             if (line.Split(';')[0] == CC.ToString())
+            {
+                result = true;
+            }
+            return result;
+        }
+
+        private static bool VerificarAsistencia(string line)
+        {
+            bool result = false;
+            if(line.Split(';')[5] == "1")
             {
                 result = true;
             }

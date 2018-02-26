@@ -1,6 +1,6 @@
 ﻿namespace ControlEventos
 {
-    partial class FormularioImportar
+    partial class FormularioExportar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,61 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioImportar));
-            this.CampoRuta = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioExportar));
             this.BotonExplorar = new System.Windows.Forms.Button();
+            this.CampoRuta = new System.Windows.Forms.TextBox();
             this.Etiqueta1 = new System.Windows.Forms.Label();
-            this.BotonImportar = new System.Windows.Forms.Button();
+            this.BotonExportar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // CampoRuta
-            // 
-            this.CampoRuta.Location = new System.Drawing.Point(12, 35);
-            this.CampoRuta.Name = "CampoRuta";
-            this.CampoRuta.Size = new System.Drawing.Size(414, 22);
-            this.CampoRuta.TabIndex = 0;
             // 
             // BotonExplorar
             // 
-            this.BotonExplorar.Location = new System.Drawing.Point(461, 29);
+            this.BotonExplorar.Location = new System.Drawing.Point(581, 46);
             this.BotonExplorar.Name = "BotonExplorar";
-            this.BotonExplorar.Size = new System.Drawing.Size(75, 34);
-            this.BotonExplorar.TabIndex = 1;
+            this.BotonExplorar.Size = new System.Drawing.Size(75, 32);
+            this.BotonExplorar.TabIndex = 0;
             this.BotonExplorar.Text = "Explorar";
             this.BotonExplorar.UseVisualStyleBackColor = true;
             this.BotonExplorar.Click += new System.EventHandler(this.BotonExplorar_Click);
             // 
+            // CampoRuta
+            // 
+            this.CampoRuta.Location = new System.Drawing.Point(12, 51);
+            this.CampoRuta.Name = "CampoRuta";
+            this.CampoRuta.Size = new System.Drawing.Size(528, 22);
+            this.CampoRuta.TabIndex = 1;
+            // 
             // Etiqueta1
             // 
             this.Etiqueta1.AutoSize = true;
-            this.Etiqueta1.Location = new System.Drawing.Point(9, 9);
+            this.Etiqueta1.Location = new System.Drawing.Point(12, 9);
             this.Etiqueta1.Name = "Etiqueta1";
-            this.Etiqueta1.Size = new System.Drawing.Size(210, 17);
-            this.Etiqueta1.TabIndex = 2;
-            this.Etiqueta1.Text = "Seleccione el archivo de origen:";
+            this.Etiqueta1.Size = new System.Drawing.Size(479, 17);
+            this.Etiqueta1.TabIndex = 3;
+            this.Etiqueta1.Text = "Seleccione el directorio donde quiere almacenar el archivo de exportación:";
             // 
-            // BotonImportar
+            // BotonExportar
             // 
-            this.BotonImportar.Location = new System.Drawing.Point(542, 29);
-            this.BotonImportar.Name = "BotonImportar";
-            this.BotonImportar.Size = new System.Drawing.Size(75, 34);
-            this.BotonImportar.TabIndex = 3;
-            this.BotonImportar.Text = "Importar";
-            this.BotonImportar.UseVisualStyleBackColor = true;
-            this.BotonImportar.Click += new System.EventHandler(this.BotonImportar_Click);
+            this.BotonExportar.Location = new System.Drawing.Point(662, 46);
+            this.BotonExportar.Name = "BotonExportar";
+            this.BotonExportar.Size = new System.Drawing.Size(75, 32);
+            this.BotonExportar.TabIndex = 4;
+            this.BotonExportar.Text = "Exportar";
+            this.BotonExportar.UseVisualStyleBackColor = true;
+            this.BotonExportar.Click += new System.EventHandler(this.BotonExportar_Click);
             // 
-            // FormularioImportar
+            // FormularioExportar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 81);
-            this.Controls.Add(this.BotonImportar);
+            this.ClientSize = new System.Drawing.Size(748, 90);
+            this.Controls.Add(this.BotonExportar);
             this.Controls.Add(this.Etiqueta1);
-            this.Controls.Add(this.BotonExplorar);
             this.Controls.Add(this.CampoRuta);
+            this.Controls.Add(this.BotonExplorar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormularioImportar";
-            this.Text = "Importar";
+            this.Name = "FormularioExportar";
+            this.Text = "Exportar";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,9 +90,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox CampoRuta;
         private System.Windows.Forms.Button BotonExplorar;
+        private System.Windows.Forms.TextBox CampoRuta;
         private System.Windows.Forms.Label Etiqueta1;
-        private System.Windows.Forms.Button BotonImportar;
+        private System.Windows.Forms.Button BotonExportar;
     }
 }

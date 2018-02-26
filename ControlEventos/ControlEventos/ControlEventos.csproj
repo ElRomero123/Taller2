@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormularioExportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioExportar.Designer.cs">
+      <DependentUpon>FormularioExportar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioImportar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormularioExportar.resx">
+      <DependentUpon>FormularioExportar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioImportar.resx">
       <DependentUpon>FormularioImportar.cs</DependentUpon>
     </EmbeddedResource>
