@@ -46,10 +46,10 @@
             this.EtiquetaAsistencia = new System.Windows.Forms.Label();
             this.BotonImportar = new System.Windows.Forms.Button();
             this.BotonExportar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.Grupo1 = new System.Windows.Forms.GroupBox();
+            this.Grupo2 = new System.Windows.Forms.GroupBox();
+            this.Grupo1.SuspendLayout();
+            this.Grupo2.SuspendLayout();
             this.SuspendLayout();
             // 
             // BotonBuscar
@@ -200,37 +200,37 @@
             this.BotonExportar.UseVisualStyleBackColor = true;
             this.BotonExportar.Click += new System.EventHandler(this.BotonExportar_Click);
             // 
-            // groupBox1
+            // Grupo1
             // 
-            this.groupBox1.Controls.Add(this.BotonBuscar);
-            this.groupBox1.Controls.Add(this.BotonExportar);
-            this.groupBox1.Controls.Add(this.BotonNuevo);
-            this.groupBox1.Controls.Add(this.BotonImportar);
-            this.groupBox1.Controls.Add(this.BotonOK);
-            this.groupBox1.Location = new System.Drawing.Point(20, 209);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(350, 176);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Opciones";
+            this.Grupo1.Controls.Add(this.BotonBuscar);
+            this.Grupo1.Controls.Add(this.BotonExportar);
+            this.Grupo1.Controls.Add(this.BotonNuevo);
+            this.Grupo1.Controls.Add(this.BotonImportar);
+            this.Grupo1.Controls.Add(this.BotonOK);
+            this.Grupo1.Location = new System.Drawing.Point(20, 209);
+            this.Grupo1.Name = "Grupo1";
+            this.Grupo1.Size = new System.Drawing.Size(350, 176);
+            this.Grupo1.TabIndex = 17;
+            this.Grupo1.TabStop = false;
+            this.Grupo1.Text = "Opciones";
             // 
-            // groupBox2
+            // Grupo2
             // 
-            this.groupBox2.Controls.Add(this.EtiquetaEstado);
-            this.groupBox2.Location = new System.Drawing.Point(20, 400);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(350, 80);
-            this.groupBox2.TabIndex = 18;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Opciones";
+            this.Grupo2.Controls.Add(this.EtiquetaEstado);
+            this.Grupo2.Location = new System.Drawing.Point(20, 400);
+            this.Grupo2.Name = "Grupo2";
+            this.Grupo2.Size = new System.Drawing.Size(350, 80);
+            this.Grupo2.TabIndex = 18;
+            this.Grupo2.TabStop = false;
+            this.Grupo2.Text = "Opciones";
             // 
             // FormularioRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(394, 492);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Grupo2);
+            this.Controls.Add(this.Grupo1);
             this.Controls.Add(this.EtiquetaAsistencia);
             this.Controls.Add(this.Etiqueta5);
             this.Controls.Add(this.CampoEmail);
@@ -245,9 +245,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormularioRegistro";
             this.Text = "Control de ingreso";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.Grupo1.ResumeLayout(false);
+            this.Grupo2.ResumeLayout(false);
+            this.Grupo2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,8 +272,8 @@
         private System.Windows.Forms.Label EtiquetaAsistencia;
         private System.Windows.Forms.Button BotonImportar;
         private System.Windows.Forms.Button BotonExportar;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox Grupo1;
+        private System.Windows.Forms.GroupBox Grupo2;
     }
 }
 

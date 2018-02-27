@@ -33,6 +33,7 @@
             this.BotonExplorar = new System.Windows.Forms.Button();
             this.Etiqueta1 = new System.Windows.Forms.Label();
             this.BotonImportar = new System.Windows.Forms.Button();
+            this.EtiquetaEstado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CampoRuta
@@ -71,11 +72,21 @@
             this.BotonImportar.UseVisualStyleBackColor = true;
             this.BotonImportar.Click += new System.EventHandler(this.BotonImportar_Click);
             // 
+            // EtiquetaEstado
+            // 
+            this.EtiquetaEstado.AutoSize = true;
+            this.EtiquetaEstado.Location = new System.Drawing.Point(12, 80);
+            this.EtiquetaEstado.Name = "EtiquetaEstado";
+            this.EtiquetaEstado.Size = new System.Drawing.Size(20, 17);
+            this.EtiquetaEstado.TabIndex = 4;
+            this.EtiquetaEstado.Text = "...";
+            // 
             // FormularioImportar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 81);
+            this.ClientSize = new System.Drawing.Size(629, 115);
+            this.Controls.Add(this.EtiquetaEstado);
             this.Controls.Add(this.BotonImportar);
             this.Controls.Add(this.Etiqueta1);
             this.Controls.Add(this.BotonExplorar);
@@ -94,5 +105,6 @@
         private System.Windows.Forms.Button BotonExplorar;
         private System.Windows.Forms.Label Etiqueta1;
         private System.Windows.Forms.Button BotonImportar;
+        private System.Windows.Forms.Label EtiquetaEstado;
     }
 }

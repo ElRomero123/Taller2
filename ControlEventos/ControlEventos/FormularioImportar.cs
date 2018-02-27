@@ -28,11 +28,12 @@ namespace ControlEventos
         {
             if(E.Escritura.Importar(@"C:\Users\Juan Pablo\Desktop\CSVDatos.csv", CampoRuta.Text))
             {
-                
+                EtiquetaEstado.Text = "Se ha importado correctamente la información!";
             }
+
             else
             {
-                
+                EtiquetaEstado.Text = "NO se puede importar la información!";
             }
         }
     }

@@ -29,7 +29,7 @@ namespace ControlEventos
 
         private void BotonOK_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private EN.Asistente CrearAsistente()
@@ -82,5 +82,12 @@ namespace ControlEventos
             Exportar.Show();
             SetVisibleCore(true);
         }
+
+        /*
+        private void EliminarRegistro()
+        {
+            E.Escritura.BuscarAsistente
+        }
+        */
     }
 }

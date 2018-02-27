@@ -8,7 +8,7 @@ namespace Escritura
         public static bool EscribirAsistente(EN.Asistente Asistente, string ruta)
         {
             bool result;
-           
+
             try
             {
                 StreamWriter sw = new StreamWriter(ruta, true);
@@ -16,7 +16,7 @@ namespace Escritura
                 sw.Close();
                 result = true;
             }
-            
+
             catch
             {
                 result = false;
@@ -38,7 +38,7 @@ namespace Escritura
                 {
                     line = sr.ReadLine();
 
-                    if(Verificar(line, CC))
+                    if (Verificar(line, CC))
                     {
                         break;
                     }
@@ -67,14 +67,62 @@ namespace Escritura
 
             return Asistente;
         }
+        
+        /*
+        public static EN.Asistente ActualizarEstado(long CC, string ruta)
+        {
+            string line;
+            EN.Asistente Asistente;
+
+            try
+            {
+                StreamReader sr = new StreamReader(ruta);
+                StreamReader wr = new StreamReader(ruta);
+
+                do
+                {
+                    line = sr.ReadLine();
+
+                    if (Verificar(line, CC))
+                    {
+                         wr.
+                        break;
+                    }
+                }
+                while (line != null);
+
+                sr.Close();
+
+                string[] datos = line.Split(';');
+
+                Asistente = new EN.Asistente
+                {
+                    CC = long.Parse(datos[0]),
+                    Nombre = datos[1],
+                    Apellido = datos[2],
+                    Telefono = datos[3],
+                    Email = datos[4],
+                    Asistencia = int.Parse(datos[5])
+                };
+            }
+
+            catch
+            {
+                Asistente = null;
+            }
+
+            return Asistente;
+        }
+
+        */
 
         public static bool Importar(string rutaActual, string rutaOrigen)
         {
             bool result;
-            string line;
-
+            
             try
             {
+                string line;
                 StreamWriter sw = new StreamWriter(rutaActual, true);
                 StreamReader sr = new StreamReader(rutaOrigen);
 
@@ -82,8 +130,8 @@ namespace Escritura
                 {
                     line = sr.ReadLine();
                     sw.WriteLine(line);
-                }
-                while (line != null);
+
+                } while(line != null);
 
                 sw.Close();
                 sr.Close();
@@ -91,10 +139,12 @@ namespace Escritura
                 result = true;
             }
 
+            
             catch
             {
                 result = false;
             }
+            
 
             return result;
         }
